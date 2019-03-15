@@ -11,6 +11,10 @@ CREATE TABLE products (
     PRIMARY KEY (id)
 );
 
+ALTER TABLE products
+MODIFY id INTEGER (11) NOT NULL AUTO_INCREMENT;
+
+    
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("iPhone Charger", "Electronics", 7.99, 5000);
 
@@ -41,3 +45,4 @@ VALUES ("Apple TV", "Electronics", 149.99, 5000);
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Prismacolor Pencils", "Crafts", 49.99, 1500);
 
+SELECT * FROM products;
