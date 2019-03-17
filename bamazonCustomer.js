@@ -165,6 +165,8 @@ function purchase(){
                             // End the database connection
                             connection.end();
                         })
+                        // Check if there's enough product in stock
+                        // if not, console.log
                     } else {
                         console.log('Sorry, there is not enough of that item in stock.');
                         console.log('Please modify your order.');
@@ -180,10 +182,4 @@ function purchase(){
                 
                 
 
-// Check if there's enough product in stock
-    // if not, log phrase "insufficient quanity"
-
-    // else fullfill customer's order:
-        // update SQL database about purchase
-        // show customer the total cost of their purchase 
-            // quanity * price 
+    
